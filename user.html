@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0 user-scalable=no;"> 
+    <title>QR_POSM</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="./images/Editions_Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body style="background-size: inherit;">
+    <div class="app1">
+        <div class="col-md-12 uimg pt-3">
+            <img src="./images/Editions_Logo.png" alt="" width="75%">
+        </div>
+
+
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <form action="#">
+                        <div class="usercheck2">
+                            <div>
+                                <div class="text-center retailer">
+                                    <p class="m-0">Retailer Details</p>
+                                </div>
+                            </div>
+                            <div class="mb-3 mt-4 phone new-user">
+                                <input type="text" class="form-control" placeholder="Retailer Phone Number" disabled>
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="mb-3 phone new-user">
+                                <input type="text" class="form-control" placeholder="Retailer Name" disabled>
+                                <i class="fa fa-user"></i>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-md-12">
+                    <form action="thankyou.html" class="needs-validation" novalidate>
+                        <div class="fruit1">
+                            <div class="mb-3">
+                                <h5><span>Q1 .</span> Which is the current brand you smoke ?</h5>
+                                <select class="form-select" required>
+                                    <option value>Please Select Option</option>
+                                    <option value="smoke1">Option 1</option>
+                                    <option value="smoke2">Option 2</option>
+                                    <option value="smoke3">Option 3</option>
+                                    <option value="smoke4">Option 4</option>
+
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please enter this field
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <h5><span>Q2 .</span>Has the retailer offered you free sample
+                                    stick of Editions Ice Fruit ? </h5>
+                                <select class="form-select" required>
+                                    <option value>Please Select Option</option>
+                                    <option value="sample1">Yes</option>
+                                    <option value="sample2">No</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please enter this field
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <h5><span>Q3 .</span>How would you rate the Editions Ice
+                                    Fruit (Please rate between 1 to 5) </h5>
+                                <select class="form-select" required onChange="checkk(this);">
+                                    <option value>Please Select Option</option>
+                                    <option value="rate1">1</option>
+                                    <option value="rate2">2</option>
+                                    <option value="rate3">3</option>
+                                    <option value="rate4">4</option>
+                                    <option value="rate5">5</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please enter this field
+                                </div>
+                            </div>
+
+
+                            <div class="mb-3" id="other-div2" style="display:none;">
+                                <h5><span>Q3(a) .</span>Please let us know what do you like
+                                    about the cigarette ? </h5>
+                                <select class="form-select q4">
+                                    <option value>Please Select Option</option>
+                                    <option value="Capsaule1">Capsule Flavour</option>
+                                    <option value="Capsaule2">Smoke Experience</option>
+                                    <option value="Capsaule3">Overall Experience</option>
+
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please enter this field
+                                </div>
+                            </div>
+
+                            <div class="mb-3 phone">
+                                <h5><span>Q4 .</span>Please Enter Your Name</h5>
+                                <input type="text" class="form-control" id="textInputField" placeholder="Your Name" required>
+                                    <div class="invalid-feedback">
+                                        Please enter this field
+                                    </div>
+                            </div>
+
+                            <div class="mb-3 phone">
+                                <h5><span>Q5 .</span>Please Enter Your Mobile Number</h5>
+                                <input type="tel" pattern="[6-9]{1}[0-9]{9}" min="0" maxlength="10" class="form-control"  placeholder="Your Mobile Number" required  id="numberInputField" >
+                                    <div class="invalid-feedback">
+                                        Please enter this field
+                                    </div>
+                            </div>
+                        </div>
+
+
+                        <div class="text-center pt-5 mb-4">
+                            <button class="btn glow-on-hover" type="submit">SUBMIT</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/formvaidate.js"></script>
+	<script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
